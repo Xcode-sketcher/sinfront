@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAQ Sinout</title>
-    <link rel="stylesheet" href="css/faq.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Staatliches&display=swap"
-        rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="css/faq.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-     
+  <body>
     <header class="Cabecario">
-    <a href="index.html" class="voltar"><img src="svg/voltar.svg" alt="Voltar" class="icone-voltar"></a>
-        <img class="logo" src="svg/Logo.svg" alt="Logo Sinout">
-              <div class="acessibilidade">
-         <button id="toggle-tema">🌙</button>
+      <a href="index.html" class="voltar"
+        ><img src="svg/voltar.svg" alt="Voltar" class="icone-voltar"
+      /></a>
+      <img class="logo" src="svg/Logo.svg" alt="Logo Sinout" />
+      <div class="acessibilidade">
+        <button id="toggle-tema">🌙</button>
         <button id="aumentar-fonte" aria-label="Aumentar tamanho da fonte">
           A+
         </button>
@@ -28,54 +30,69 @@
         </button>
       </div>
     </header>
-    
 
     <h1>FAQ</h1>
 
     <div class="botoes">
-        <button onclick="toggleTexto(0)">Como isso pode me ajudar?</button>
-        <div class="conteudo">Nosso software foi criado para ser uma ponte entre suas emoções e o mundo, trazendo
-            benefícios práticos e diretos para o seu dia a dia.</div>
+      <button onclick="toggleTexto(0)">Como isso pode me ajudar?</button>
+      <div class="conteudo">
+        Nosso software foi criado para ser uma ponte entre suas emoções e o
+        mundo, trazendo benefícios práticos e diretos para o seu dia a dia.
+      </div>
 
-        <button onclick="toggleTexto(1)">Como funciona?</button>
-        <div class="conteudo">Nossa tecnologia funciona de forma simples e intuitiva,
-            usando a câmera do seu computador, tablet ou celular para transformar suas expressões faciais em
-            comunicação.</div>
+      <button onclick="toggleTexto(1)">Como funciona?</button>
+      <div class="conteudo">
+        Nossa tecnologia funciona de forma simples e intuitiva, usando a câmera
+        do seu computador, tablet ou celular para transformar suas expressões
+        faciais em comunicação.
+      </div>
 
-        <button onclick="toggleTexto(2)">Como personalizar?</button>
-        <div class="conteudo">Acesse o menu de opções e escolha as opções que mais combinam com você e ajuste facilmente
-            cada detalhe conforme sua preferência.</div>
+      <button onclick="toggleTexto(2)">Como personalizar?</button>
+      <div class="conteudo">
+        Acesse o menu de opções e escolha as opções que mais combinam com você e
+        ajuste facilmente cada detalhe conforme sua preferência.
+      </div>
 
-        <button onclick="toggleTexto(3)">Como trocar as palavras pré-definidas?</button>
-        <div class="conteudo">Clique sobre a palavra que deseja alterar, digite o novo texto e pronto! Personalize
-            facilmente conforme sua necessidade.</div>
+      <button onclick="toggleTexto(3)">
+        Como trocar as palavras pré-definidas?
+      </button>
+      <div class="conteudo">
+        Clique sobre a palavra que deseja alterar, digite o novo texto e pronto!
+        Personalize facilmente conforme sua necessidade.
+      </div>
     </div>
 
     <div class="chat-wrapper">
-        <div class="chat-container">
-            <header class="chat-header">
-                Chat IA
-            </header>
+      <div class="chat-container">
+        <header class="chat-header">Chat IA</header>
 
-            <main class="chat-body">
-                <div class="welcome-message">
-                    <p>OLÁ, SOU PERSEU SUA IA</p>
-                </div>
-                <div class="robot-container">
-                    <img src="img/empurrando-removebg-preview.png" alt="Robô Perseu 1" class="robot-img">
-                    <img src="img/ia_feliz_2-removebg-preview (2).png" alt="Robô Perseu 2" class="robot-img robot-2">
-                </div>
-            </main>
+        <main class="chat-body">
+          <div class="welcome-message">
+            <p>OLÁ, SOU PERSEU SUA IA</p>
+          </div>
+          <div class="robot-container">
+            <img
+              src="img/empurrando-removebg-preview.png"
+              alt="Robô Perseu 1"
+              class="robot-img"
+            />
+            <img
+              src="img/ia_feliz_2-removebg-preview (2).png"
+              alt="Robô Perseu 2"
+              class="robot-img robot-2"
+            />
+          </div>
+        </main>
 
-            <footer class="chat-footer">
-                <input type="text" placeholder="Escreva...">
-                <button type="submit">Enviar</button>
-            </footer>
-        </div>
+        <footer class="chat-footer">
+          <input type="text" placeholder="Escreva..." />
+          <button type="submit">Enviar</button>
+        </footer>
+      </div>
     </div>
 
-       <!-- <img id="onda" src="svg/ondarodapé.svg" alt="duas ondas uma larnaja maior e a ponta de outra onda roxa atrás">-->
- <!-- Rodapé -->
+    <!-- <img id="onda" src="svg/ondarodapé.svg" alt="duas ondas uma larnaja maior e a ponta de outra onda roxa atrás">-->
+    <!-- Rodapé -->
     <footer class="rodape" aria-label="Rodapé do site Sinout">
       <div class="rodape-container">
         <div class="rodape-convite">
@@ -96,10 +113,26 @@
         <div class="rodape-coluna">
           <h3 class="rodape-titulo">Ajuda</h3>
           <ul class="rodape-lista">
-            <li><a href="./FaqCompletoDeslogado.html" target="_blank">Como isso funciona?</a></li>
-            <li><a href="./FaqCompletoDeslogado.html" target="_blank">Onde perguntar?</a></li>
-            <li><a href="./FaqCompletoDeslogado.html" target="_blank">Como paga?</a></li>
-            <li><a href="./FaqCompletoDeslogado.html" target="_blank">Eu preciso disso?</a></li>
+            <li>
+              <a href="./FaqCompletoDeslogado.html" target="_blank"
+                >Como isso funciona?</a
+              >
+            </li>
+            <li>
+              <a href="./FaqCompletoDeslogado.html" target="_blank"
+                >Onde perguntar?</a
+              >
+            </li>
+            <li>
+              <a href="./FaqCompletoDeslogado.html" target="_blank"
+                >Como paga?</a
+              >
+            </li>
+            <li>
+              <a href="./FaqCompletoDeslogado.html" target="_blank"
+                >Eu preciso disso?</a
+              >
+            </li>
           </ul>
         </div>
 
@@ -115,20 +148,19 @@
       <div class="rodape-direitos">Sinout todos os direitos reservados</div>
     </footer>
 
+    <!-- VLibras -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
 
-
-<!-- VLibras -->
-<div vw class="enabled">
-  <div vw-access-button class="active"></div>
-  <div vw-plugin-wrapper>
-    <div class="vw-plugin-top-wrapper"></div>
-  </div>
-</div>
-
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script src="js/FaqCompletoDeslogado.js"></script>
-
-
-</body>
-
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/sienna-accessibility@latest/dist/sienna-accessibility.umd.js"
+      defer
+    ></script>
+    <script src="js/FaqCompletoDeslogado.js"></script>
+  </body>
 </html>

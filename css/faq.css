@@ -343,6 +343,7 @@ input:focus {
     font-family: Arial, sans-serif;
     line-height: 1.4;
     width: 100%;
+    color: #ffffff;
 }
 
 .rodape-container {
@@ -359,7 +360,7 @@ input:focus {
     flex-basis: 30%; 
     font-size: 1em;
     font-weight: bold;
-    color: var(--cor-terciaria);
+    color: #ffffff;
 }
 
 .rodape-titulo {
@@ -371,6 +372,7 @@ input:focus {
 
 .rodape-lista li {
     margin-bottom: 4px;
+    list-style: none;
   }
   .rodape-lista a {
     color: var(--cor-fundo); 

@@ -52,9 +52,10 @@ header#white ul {
 }
 header#white li {
   list-style-type: none;
+  font-size: 1.5rem;
 }
 .logo img {
-  width: 250px;
+  width: 300px;
   margin-right: 100px;
 }
 .menu {
@@ -85,6 +86,7 @@ header#white li {
   text-transform: uppercase;
   transition: all 0.3s ease;
   font-size: 0.9rem;
+  text-decoration: none;
 } 
 
 
@@ -328,7 +330,7 @@ button:hover {
     font-weight: 400;
   }
   h3 {
-    font-size: 1.2em;
+    font-size: 1.5em;
     color: var(--cor-secundaria);
     font-family: var(--font-secundaria);
     margin-bottom: 30px;
@@ -359,21 +361,29 @@ button:hover {
 .card {
   background-color: var(--cor-terciaria);
   border-radius: 20px;
-  padding: 80px 15px;
+  padding: 50px 15px 30px;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
   width: 90%;
   max-width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   text-align: center;
   position: relative;
   overflow: hidden;
+  min-height: 350px;
+  img {
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
   h3 {
-    font-size: 1.2em;
+    font-size: 2.5em;
     color: var(--cor-secundaria);
     margin: 0 0 10px 0;
-    font-weight: 700;
+    font-weight: 900;
     text-transform: uppercase;
   }
   p {
@@ -876,7 +886,7 @@ button:hover {
 }
 
 .logo {
-  width: 150px;
+  width: 300px;
   margin-bottom: 40px;
 }
 
@@ -1022,6 +1032,7 @@ button:hover {
 
 .rodape-lista li {
     margin-bottom: 4px;
+    list-style: none;
 }
 .rodape-lista a {
     color: var(--cor-terciaria); 

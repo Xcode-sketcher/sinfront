@@ -375,7 +375,7 @@ input:focus {
     flex-basis: 30%; 
     font-size: 1em;
     font-weight: bold;
-    color: var(--cor-terciaria);
+    color: #ffffff;
 }
 
 .rodape-titulo {
@@ -387,6 +387,7 @@ input:focus {
 
 .rodape-lista li {
     margin-bottom: 4px;
+    list-style: none;
   }
   .rodape-lista a {
     color: var(--cor-fundo); 

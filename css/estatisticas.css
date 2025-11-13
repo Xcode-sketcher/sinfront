@@ -5,6 +5,14 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+:root {
+  --cor-primaria: #40385e;
+  --cor-secundaria: #f6813b;
+  --cor-terciaria: #ffffff;
+  --cor-quartenaria: #fafafa;
+  --font-primaria: "Staatliches", sans-serif;
+  --font-secundaria: "Poppins", sans-serif;
+}
 
 body {
   background-color: #f6f5fc;
@@ -28,7 +36,7 @@ body {
 }
 
 .logo {
-  width: 150px;
+  width: 300px;
 }
 
 .icone-voltar {
@@ -56,12 +64,17 @@ body {
 .card {
   flex: 1;
   min-width: 180px;
+  min-height: 120px;
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   text-align: center;
   padding: 20px;
   transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .card:hover {
@@ -71,12 +84,13 @@ body {
 .card h3 {
   font-size: 28px;
   color: #40385e;
-  margin-bottom: 5px;
+  margin: 0 0 5px 0;
 }
 
 .card p {
   font-size: 15px;
   color: #666;
+  margin: 0;
 }
 
 .card .emoji,
@@ -165,42 +179,54 @@ body {
 
 /* ===== RODAPÉ ===== */
 .rodape {
-  margin-top: 50px;
-  background: #40385e;
-  color: #fff;
-  padding: 40px 20px;
-  border-radius: 20px 20px 0 0;
+    background-color: var(--cor-fundo);
+    color: var(--cor-terciaria);
+    padding: 30px 20px 15px; 
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+    background-color: #40385e;
+    
 }
 
-.rodape .mensagem {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 15px;
+.rodape-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;  
+    padding-bottom: 20px; 
+    border-bottom: none; 
 }
 
-.rodape .links {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-bottom: 30px;
+.rodape-convite {
+    flex-basis: 30%; 
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--cor-terciaria);
 }
 
-.rodape h4 {
-  font-size: 16px;
-  margin-bottom: 10px;
-  color: #f9d64a;
+.rodape-titulo {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: var(--cor-titulo);
+    margin-bottom: 10px;
 }
 
-.rodape p {
-  font-size: 14px;
-  line-height: 1.6;
+.rodape-lista li {
+    margin-bottom: 4px;
+    list-style: none;
+}
+.rodape-lista a {
+    color: var(--cor-terciaria); 
+    text-decoration: none;
+    transition: color 0.3s ease; 
 }
 
-.rodape .direitos {
-  text-align: center;
-  font-size: 13px;
-  opacity: 0.8;
+.rodape-direitos {
+    text-align: center;
+    font-size: 0.85em;
+    opacity: 0.8;
+    padding-top: 15px;
 }
 
 /* ===== RESPONSIVIDADE ===== */

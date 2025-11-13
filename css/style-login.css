@@ -1,0 +1,375 @@
+/* ===== Variáveis ===== */
+:root {
+  /* 🌞 Tema Claro */
+  --cor-fundo: #ffffff;
+  --cor-texto: #1a1625;
+  --cor-primaria: #3F375C;      /* Roxo escuro */
+  --cor-secundaria: #FCB98A;    /* Laranja claro */
+  --cor-terciaria: #724D9C;     /* Roxo médio */
+  --fonte-principal: "Poppins", sans-serif;
+}
+
+/* 🌙 Tema Escuro */
+.dark-mode {
+  --cor-fundo: #1a1625;
+  --cor-texto: #000000;
+  --cor-primaria:   #9b7edb;
+  --cor-secundaria: #3F375C;
+  --cor-terciaria:  #FCB98A;
+}
+
+/* ===== ESTILOS GERAIS ===== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+ 
+  position: relative;
+  overflow: hidden;
+}
+
+header{
+  padding: 40px;
+  position: absolute;
+  z-index: 10;
+}
+
+
+main{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+/* ===== CONTAINER ===== */
+#container {
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.20);
+  border-radius: 20px;
+
+  /* fica acima da onda */
+  position: relative;
+  z-index: 2;
+}
+
+/* ===== CONTAINER PRINCIPAL ===== */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+/* ===== LOGO ===== */
+.logo img {
+  height: 80px;
+  object-fit: contain;
+}
+
+/* ===== CARD DE LOGIN ===== */
+.login-box {
+  background-color: #fff;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border: 3px solid #f15a24; /* Laranja característico do Figma */
+  z-index: 3; /* garante que fica acima da onda */
+}
+
+/* ===== TÍTULO ===== */
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #3a216e; /* Roxo do Figma */
+  font-weight: 700;
+}
+
+/* ===== CAMPOS DE ENTRADA ===== */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #2b2b2b;
+}
+
+.input-group input {
+  padding: 10px;
+  border: 3px solid #f15a24;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* Efeito ao clicar no input */
+.input-group input:focus {
+  border-color: #f15a24;
+}
+
+/* ===== BOTÃO DE LOGIN ===== */
+.btn-login {
+  background-color: #f15a24;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #d94e1f;
+}
+
+/* ===== TEXTO DE CADASTRO ===== */
+.register-text {
+  text-align: center;
+  margin-top: 15px;
+  color: #333;
+}
+
+.register-text a {
+  color: #3a216e;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 600px) {
+  body {
+    background-position: right;
+  }
+
+  .login-box {
+    width: 85%;
+    padding: 30px 25px;
+  }
+
+  .logo img {
+    height: 60px;
+  }
+}
+
+/* ===== SHAPE DIVIDER (onda laranja no fundo) ===== */
+.custom-shape-divider-bottom-1762536954 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+
+  /* fica por trás de tudo */
+  z-index: 1;
+}
+
+.custom-shape-divider-bottom-1762536954 svg {
+  position: relative;
+  display: block;
+  width: calc(161% + 1.3px);
+  height: 600px;
+}
+
+.custom-shape-divider-bottom-1762536954 .shape-fill {
+  fill: #FD7B2F;
+}
+
+
+/* ===== SHAPE DIVIDER (onda roxo no fundo) ===== */
+.custom-shape-divider-bottom-1762540558 { 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    overflow: hidden; 
+    line-height: 0; 
+} 
+
+.custom-shape-divider-bottom-1762540558 svg { 
+    position: relative; 
+    display: block; 
+    width: calc(159% + 1.3px); 
+    height: 680px; 
+} 
+
+.custom-shape-divider-bottom-1762540558 .shape-fill { 
+    fill: #40385E; 
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+.btn-toggle-password {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-toggle-password:hover {
+  color: #000;
+}
+
+
+.password-wrapper input::-ms-reveal,
+.password-wrapper input::-ms-clear {
+  display: none;
+}
+
+.password-wrapper input::-webkit-contacts-auto-fill-button,
+.password-wrapper input::-webkit-credentials-auto-fill-button,
+.password-wrapper input::-webkit-textfield-decoration-container,
+.password-wrapper input::-webkit-password-reveal-button {
+  display: none !important;
+}
+
+.password-wrapper input {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+
+
+/* botão de voltar */
+.voltar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.icone-voltar {
+  width: 26px; /* tamanho do SVG */
+  height: 26px;
+  transition: transform 0.2s ease;
+  filter: invert(18%) sepia(16%) saturate(2192%) hue-rotate(229deg) brightness(94%) contrast(91%);
+  /* esse filtro pinta o SVG de roxo #40385E */
+}
+
+.voltar:hover {
+  background-color: rgba(123, 78, 255, 0.1);
+}
+
+.voltar:hover .icone-voltar {
+  transform: scale(1.15);
+  filter: invert(40%) sepia(96%) saturate(1800%) hue-rotate(241deg) brightness(96%) contrast(95%);
+  /* muda pra roxo mais vivo no hover */
+}
+
+
+
+
+
+header {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  display: flex;
+  gap: 8px;
+}
+
+
+.acessibilidade {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  display: flex;
+  gap: 8px;
+}
+
+.acessibilidade button {
+  background-color: transparent;
+  border: 1px solid var(--cor-secundaria);
+  color: var(--cor-secundaria);
+  border-radius: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-family: var(--font-secundaria);
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 0.85rem;
+}
+
+.acessibilidade button:hover {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-terciaria);
+}
+body.alto-contraste {
+  background-color: #000;
+  background-image: url("../svg/fundoFaqContraste.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #000000;
+}
+
+
+body.alto-contraste * {
+  color: #00ffff !important;
+  border-color: #00ffff !important; 
+}
+
+body.alto-contraste a {
+  color: #00ffff !important;
+  text-decoration: underline;
+}
+
+body.alto-contraste button {
+  background-color: #000 !important;
+  color: #00ffff !important;
+  border: 2px solid #00ffff !important;
+}
+
+body.alto-contraste h1,
+body.alto-contraste h2,
+body.alto-contraste h3,
+body.alto-contraste h4,
+body.alto-contraste h5,
+body.alto-contraste h6 {
+  color: #00ffff !important; 
+}
+.text {
+    color: #00ffff !important;
+}
+
+
+

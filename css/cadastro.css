@@ -1,0 +1,213 @@
+/* estilos gerais */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+#container {
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+
+  position: relative;
+  z-index: 2;
+}
+
+/* container principal */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+/* logo */
+.logo img {
+  height: 80px;
+  object-fit: contain;
+}
+
+/* login */
+.login-box {
+  background-color: #fff;
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border: 3px solid #f15a24; /* Laranja característico do Figma */
+}
+
+/* titulo */
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #3a216e; /* Roxo do Figma */
+  font-weight: 700;
+}
+
+/* campus de entrada de email e senha */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #2b2b2b;
+}
+
+.input-group input {
+  padding: 10px;
+  border: 2px solid #f15a24;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+/* Efeito ao clicar no input */
+.input-group input:focus {
+  border-color: #f15a24;
+}
+
+/* botao de login */
+.btn-login {
+  background-color: #f15a24;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #d94e1f;
+}
+
+/* texto de cadastro */
+.register-text {
+  text-align: center;
+  margin-top: 15px;
+  color: #333;
+}
+
+.register-text a {
+  color: #3a216e;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
+/* resposividade para o mobile */
+@media (max-width: 600px) {
+  body {
+    background-position: right;
+  }
+
+  .login-box {
+    width: 85%;
+    padding: 30px 25px;
+  }
+
+  .logo img {
+    height: 60px;
+  }
+}
+
+/* ===== SHAPE DIVIDER (onda laranja no fundo) ===== */
+.custom-shape-divider-bottom-1762536954 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+
+  /* fica por trás de tudo */
+  z-index: 1;
+}
+
+.custom-shape-divider-bottom-1762536954 svg {
+  position: relative;
+  display: block;
+  width: calc(161% + 1.3px);
+  height: 600px;
+}
+
+.custom-shape-divider-bottom-1762536954 .shape-fill {
+  fill: #FD7B2F;
+}
+
+
+/* ===== SHAPE DIVIDER (onda roxo no fundo) ===== */
+.custom-shape-divider-bottom-1762540558 { 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    overflow: hidden; 
+    line-height: 0; 
+} 
+
+.custom-shape-divider-bottom-1762540558 svg { 
+    position: relative; 
+    display: block; 
+    width: calc(159% + 1.3px); 
+    height: 680px; 
+} 
+
+.custom-shape-divider-bottom-1762540558 .shape-fill { 
+    fill: #40385E; 
+}
+
+.senha-group {
+        position: relative;
+      }
+
+      .toggle-icone {
+        position: absolute;
+        right: 10px;
+        top: 38px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        fill: #666;
+        transition: fill 0.2s ease;
+      }
+
+      .toggle-icone:hover {
+        fill: #3f375c; /* roxo do tema */
+      }
+
+      input.erro {
+        border: 2px solid #e74c3c;
+        background-color: #ffeaea;
+      }
+
+      #mensagem {
+        font-weight: 600;
+        margin-top: 10px;
+      }

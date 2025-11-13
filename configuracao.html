@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Configurações - Sinout</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ELA" />
+  <meta name="keywords" content="Comunicação, tradução, ELA, deficiência" />
+  <meta name="author" content="Equipe-Sinout" />
+  <meta name="robots" content="index, follow" />
+  <link rel="stylesheet" href="css/Configuracao.css" />
+  <link rel="shortcut icon" href="img/Imagem_do_WhatsApp_de_2025-10-03_à_s__14.11.26_235f47d3-removebg-preview.png"
+    type="image/x-icon" />
+</head>
+
+<body>
+  <header class="Cabecario">
+    <a href="index.html" class="voltar"><img src="svg/voltar.svg" alt="Voltar" class="icone-voltar"></a>
+    <img class="logo" src="img/Logo.png" alt="Logo Sinout">
+    <div>
+      <div class="acessibilidade">
+        <button id="toggle-tema">🌙</button>
+        <button id="aumentar-fonte" aria-label="Aumentar tamanho da fonte">A+</button>
+        <button id="diminuir-fonte" aria-label="Diminuir tamanho da fonte">A-</button>
+        <button id="contraste" aria-label="Ativar alto contraste">Contraste</button>
+      </div>
+  </header>
+  <section class="janela-config">
+    <div class="navegacao">
+      <ul>
+        <li id="nav-visao-geral">Visão geral</li>
+        <li id="nav-assinatura">Assinatura</li>
+        <li id="nav-seguranca">Segurança</li>
+        <li id="nav-perfil">Perfil</li>
+      </ul>
+
+    </div>
+    <hr>
+    <div class="opcoes-config">
+      <!-- visão geral colocar foto de perfil
+        assinatura, colocar os plano da pessoa data de expiração, mudar o plano, pagamento recorrente 
+        segurança, email, senha oculta, alterar senha, alterar nome do paciente, nome do cuidador, confirmar com os termos de uso
+        perfil. mudar foto do perfil, idioma, fazer como se fosse uma bio -->
+
+      <div id="conteudo-visao-geral" class="conteudo-config ativo">
+        <h2>Visão Geral</h2>
+        <ul>
+          <li id="foto-perfil"><a href="#"><img src="img/Nicolas.png" alt="foto de perfil"></a></li>
+
+          <li><a href="#">Alterar Plano</a></li>
+
+          <li><a href="#">Nome do Paciente</a></li>
+
+          <li><a href="#">Nome do Cuidador</a><br></li>
+
+          <li><a href="#">Idioma</a></li>
+        </ul>
+      </div>
+
+
+      <div id="conteudo-assinatura" class="conteudo-config">
+        <h2>Assinatura</h2>
+        <ul>
+          <li class="lista-planos">
+            <h3>Olhar Básico (Seu Plano)</h3>
+            <ul class="lista-opcoes">
+              <li>Reconhecimento de expressões básicas</li>
+              <li>
+                Identifica apenas emoções primárias: feliz, triste e neutro.
+              </li>
+              <li>1 paciente + 1 cuidador</li>
+              <li>
+                Limite de uso: até 20 interações/mensagens por período de 3
+                horas
+              </li>
+              <li>Relatórios simplificados (sem exportação)</li>
+              <li>Acesso sem suporte prioritário</li>
+            </ul>
+          </li>
+
+          <li class="lista-planos">
+            <h3>Olhar Completo</h3>
+            <ul class="lista-opcoes">
+              <li>
+                Reconhece todas as emoções, incluindo microexpressões e
+                intensidade emocional
+              </li>
+              <li>Reconhecimento completo de expressões</li>
+              <li>1 paciente + até 3 cuidadores</li>
+              <li>Relatórios detalhados com visualização gráfica</li>
+              <li>Suporte padrão</li>
+              <li>Uso ilimitado</li>
+            </ul>
+          </li>
+
+          <li class="lista-planos">
+            <h3>Olhar Corporativo </h3>
+            <ul class="lista-opcoes">
+              <li>
+                  Inclui insights sobre padrões de comunicação e sugestões de
+                  intervenção
+                </li>
+                <li>
+                  Identifica todas as emoções, microexpressões e intensidade
+                  emocional
+                </li>
+                <li>Reconhecimento completo de expressões</li>
+                <li>Pacientes ilimitados com múltiplos cuidadores</li>
+                <li>Uso ilimitado / sem intervalos obrigatórios</li>
+                <li>Relatórios avançados e exportação completa</li>
+                <li>Suporte prioritário corporativo</li>
+            </ul>
+          </li>
+
+
+
+        </ul>
+      </div>
+
+      <div id="conteudo-seguranca" class="conteudo-config">
+        <h2>Segurança</h2>
+        <ul>
+
+          <li><a href="#">Senha<br> ••••••••</a></li>
+          <li><a href="#">Alterar Senha</a></li>
+
+          <li><a href="#">E-mail<br><span>meuemail@email.com</span></a></li>
+
+          
+
+          <li><a href="#">Termos e Privacidade</a></li>
+        </ul>
+      </div>
+      <div id="conteudo-perfil" class="conteudo-config">
+        <h2>Perfil</h2>
+        <ul>
+          <li id="foto-perfil"><a href="#"><img src="img/Nicolas.png" alt="foto de perfil"></a></li>
+
+          <li><a href="#">Alterar Foto de Perfil</a></li>
+
+          <li><a href="#">Nome do Paciente</a></li>
+
+          <li><a href="#">Nome do Cuidador</a></li>
+
+          
+        </ul>
+      </div>
+    </div>
+
+  </section>
+  <script src="js/configuracao.js"></script>
+</body>

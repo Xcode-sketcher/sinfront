@@ -381,8 +381,8 @@ body {
 }
 
 .icone-voltar {
-  width: 26px; /* tamanho do SVG */
-  height: 26px;
+  width: 35px;
+  height: 35px;
   transition: transform 0.2s ease;
   filter: invert(18%) sepia(16%) saturate(2192%) hue-rotate(229deg) brightness(94%) contrast(91%);
   /* esse filtro pinta o SVG de roxo #40385E */

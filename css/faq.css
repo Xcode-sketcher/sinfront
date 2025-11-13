@@ -84,8 +84,8 @@ body.dark-mode {
 }
 
 .icone-voltar {
-  width: 26px; 
-  height: 26px;
+  width: 35px; 
+  height: 35px;
   transition: transform 0.2s ease;
   filter: invert(18%) sepia(16%) saturate(2192%) hue-rotate(229deg) brightness(94%) contrast(91%);
 
